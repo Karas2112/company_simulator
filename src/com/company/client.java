@@ -1,6 +1,7 @@
 package com.company;
 
-public class pracownik {
+public class client {
     String name;
+    String group;
 
 }

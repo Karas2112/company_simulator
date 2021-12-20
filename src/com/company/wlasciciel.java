@@ -8,4 +8,10 @@ public class wlasciciel {
     boolean wordpress = true;
     boolean prestashop = true;
     boolean mobile_app = false;
+
+    static void program() {
+
+    }
+
 }
+
