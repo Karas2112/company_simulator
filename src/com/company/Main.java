@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws InterruptedException {
-        wlasciciel me = new wlasciciel();
 
+    public static void main(String[] args) throws InterruptedException {
+
+        wlasciciel me = new wlasciciel();
         char quit = 'n';
         String input;
         int choice;
@@ -15,7 +16,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         while(quit != 'y'){
-            System.out.println("MENU LOL, wybierz opcje:" +
+            System.out.println("Dzień: 1.01.2020" + "                                           " + "Stan konta: " + me.budget + "\n" +
+                    "\nWybierz opcję:" + "\n" +
                     "\n1. PROGRAMMM!!1!" +
                     "\n2. Search for clients" +
                     "\n3. Sign new contract" +
@@ -28,6 +30,7 @@ public class Main {
 
             switch (choice){
                 case 1:
+
                     wlasciciel.program();
                     System.out.println("nic");
                     break;
@@ -77,3 +80,4 @@ public class Main {
 
     }
 }
+
