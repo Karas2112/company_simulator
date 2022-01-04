@@ -15,6 +15,12 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
+        client Bartek = new client("Bartek Karas", "wyluzowany");
+
+        project project1 = new project("projekt 1", Bartek, 12032020.,500,5000,20032020, "easy");
+        project1.client= Bartek;
+
+
         while(quit != 'y'){
             System.out.println("Dzień: 1.01.2020" + "                                           " + "Stan konta: " + me.budget + "\n" +
                     "\nWybierz opcję:" + "\n" +

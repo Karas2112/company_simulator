@@ -10,7 +10,7 @@ public class wlasciciel {
     boolean mobile_app = false;
 
     static void program() {
-
+        System.out.println("What project do you want to work on?: ");
     }
 
 }
