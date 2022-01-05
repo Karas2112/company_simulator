@@ -1,28 +1,39 @@
 package com.company;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ParseException {
+
 
         wlasciciel me = new wlasciciel();
         char quit = 'n';
         String input;
         int choice;
 
+        String date = "2020-01-01";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+        c.setTime(sdf.parse(date));
+        date = sdf.format(c.getTime());
+
         Scanner scan = new Scanner(System.in);
 
         client Bartek = new client("Bartek Karas", "wyluzowany");
 
-        project project1 = new project("projekt 1", Bartek, 12032020.,500,5000,20032020, "easy");
+        project project1 = new project("projekt 1", Bartek, 12032020.,500,5000, date, "easy");
         project1.client= Bartek;
 
 
         while(quit != 'y'){
-            System.out.println("Dzień: 1.01.2020" + "                                           " + "Stan konta: " + me.budget + "\n" +
+            System.out.println("Dzień: " + date + "                                           " + "Stan konta: " + me.budget + "\n" +
                     "\nWybierz opcję:" + "\n" +
                     "\n1. PROGRAMMM!!1!" +
                     "\n2. Search for clients" +
@@ -32,13 +43,14 @@ public class Main {
                     "\n6. Employee menagment" +
                     "\n7. fuck with departments" +
                     "\n8. wyjdz z gry");
+            System.out.println();
             choice = scan.nextInt();
 
             switch (choice){
                 case 1:
 
                     wlasciciel.program();
-                    System.out.println("nic");
+                    c.add(Calendar.DATE, 1);
                     break;
                 case 2:
                     System.out.println("nic2");
@@ -73,6 +85,7 @@ public class Main {
                     {
                         Thread.currentThread().interrupt();
                     }
+
             }
 
 
