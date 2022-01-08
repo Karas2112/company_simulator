@@ -22,14 +22,13 @@ public class Main {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Calendar c = Calendar.getInstance();
         c.setTime(sdf.parse(date));
-        date = sdf.format(c.getTime());
+
 
         Scanner scan = new Scanner(System.in);
 
         client Bartek = new client("Bartek Karas", "wyluzowany");
 
         project project1 = new project("projekt 1", Bartek, 12032020.,500,5000, date, "easy");
-        project1.client= Bartek;
 
 
         while(quit != 'y'){
@@ -51,24 +50,37 @@ public class Main {
 
                     wlasciciel.program();
                     c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 2:
                     System.out.println("nic2");
+                    c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 3:
                     System.out.println("nic3");
+                    c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 4:
                     System.out.println("nic4");
+                    c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 5:
                     System.out.println("nic5");
+                    c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 6:
                     System.out.println("nic6");
+                    c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 7:
                     System.out.println("nic7");
+                    c.add(Calendar.DATE, 1);
+                    date = sdf.format(c.getTime());
                     break;
                 case 8:
                     System.out.println("Sure you want to leave? (y/n): ");
