@@ -11,6 +11,7 @@ public class wlasciciel {
 
     static void program() {
         System.out.println("What project do you want to work on?: ");
+        System.out.println("project.list_of_projects()");
     }
 
 }

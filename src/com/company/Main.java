@@ -29,7 +29,7 @@ public class Main {
         client Bartek = new client("Bartek Karas", "wyluzowany");
 
         project project1 = new project("projekt 1", Bartek, 12032020.,500,5000, date, "easy");
-
+        project project2 = new project("projekt 2", Bartek,1223232, 500, 2342, date, "medium");
 
         while(quit != 'y'){
             System.out.println("Dzień: " + date + "                                           " + "Stan konta: " + me.budget + "\n" +

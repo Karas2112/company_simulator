@@ -8,4 +8,5 @@ public class client {
         this.name = name;
         this.group = group;
     }
+
 }

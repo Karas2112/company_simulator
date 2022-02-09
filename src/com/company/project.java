@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Date;
-
 public class project {
     String name;
     client client;
@@ -10,6 +8,8 @@ public class project {
     int remuneration;
     String remuneration_date;
     String level;
+
+    public static project[] list_of_projects;
 
     public project(String name, client client, double deadline, int penalty, int remuneration, String remuneration_date, String level){
         this.name = name;
@@ -30,7 +30,8 @@ public class project {
         }
     }
 
-    static void list_of_projects(){
 
-    }
+
+
+
 }
